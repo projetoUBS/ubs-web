@@ -1,0 +1,66 @@
+<ui:composition
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+	<p:megaMenu>
+		<p:submenu label="Pessoas" icon="#">
+			<p:column>
+				<p:submenu label="Cadastro de Pessoas">
+					<p:menuitem value="Cadastrar" url="#" />
+					<p:menuitem value="Consultar" url="#" />
+				</p:submenu>
+				<p:submenu label="Provisionamento">
+					<p:menuitem value="Grupos de Acesso" url="#" />
+				</p:submenu>
+				<p:submenu label="Gestão UBS">
+					<p:menuitem value="Cadastrar" url="#" />
+					<p:menuitem value="Consultar" url="#" />
+				</p:submenu>
+			</p:column>
+		</p:submenu>
+		<p:submenu label="Produtos" icon="#">
+			<p:column>
+				<p:submenu label="Gestão de Produtos">
+					<p:menuitem value="Consultar" url="#" />
+					<p:menuitem value="Cadastrar" url="#" />
+				</p:submenu>
+				<p:submenu label="Gestão de Estoque">
+					<p:menuitem value="Produtos em Estoque" url="#" />
+					<p:menuitem value="Medicamentos" url="#" />
+				</p:submenu>
+			</p:column>
+		</p:submenu>
+		<p:submenu label="Consultas" icon="#">
+			<p:column>
+				<p:submenu label="Gestão de Consultas">
+					<p:menuitem value="Agendar" url="#" />
+					<p:menuitem value="Visualizar Agenda" url="#" />
+				</p:submenu>
+				<p:submenu label="Prontuários">
+					<p:menuitem value="Consultar" url="#" />
+				</p:submenu>
+			</p:column>
+		</p:submenu>
+		<p:submenu label="Farmácia" icon="#">
+			<p:column>
+				<p:submenu label="Medicamentos">
+					<p:menuitem value="Entregas pendentes" url="#" />
+					<p:menuitem value="Registrar retirada" url="#" />
+				</p:submenu>
+			</p:column>
+		</p:submenu>
+		<p:submenu label="Enfermaria" icon="#">
+			<p:column>
+				<p:submenu label="Medicamentos">
+					<p:menuitem value="Entregas pendentes" url="#" />
+				</p:submenu>
+				<p:submenu label="Vacinação">
+					<p:menuitem value="Visualizar caderneta" url="#" />
+					<p:menuitem value="Aplicar vacina" url="#" />
+				</p:submenu>
+			</p:column>
+		</p:submenu>
+	</p:megaMenu>
+</ui:composition>
