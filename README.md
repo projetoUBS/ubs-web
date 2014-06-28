@@ -19,7 +19,7 @@ Tutorial rápido do Git: [http://rogerdudler.github.io/git-guide/index.pt_BR.htm
 (http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 
 Instalação e Configuração do Git: [http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git]
-(http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git}
+(http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git)
 
 #### Configurando o diretório para utilização no projeto UBS+
 
