@@ -35,10 +35,11 @@ Este comando irá iniciar o Git no diretório, e criar uma pasta .git
 
 **Passo 3:** Após direcionado a origem (fork), é necessário direcionar o repositório original. Digite:
 
-`git checkout -b upstream/master`
-`git remote add upstream git@github.com:projetoUBS/ubs-web.git`
+`git checkout -b upstream/master` 
 
-*Passo 4:** Voltar o usuário para o de origem
+E depois: `git remote add upstream git@github.com:projetoUBS/ubs-web.git`
+
+**Passo 4:** Voltar o usuário para o de origem
 
 `git checkout master`
 
