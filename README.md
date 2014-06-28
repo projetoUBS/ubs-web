@@ -51,11 +51,11 @@ Puxar atualizações do repositório do projeto:
 
 `git checkout master`
 
-`git pull upstream master`
+`git fetch upstream`
 
 Mesclando seu repositório local com a branch do repositório do projeto
 
-`git merge upstream/master`
+`git merge upstream/master master`
 
 #### Adicionando atualizações de seu repositório local para o Projeto
 
