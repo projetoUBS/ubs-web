@@ -1,19 +1,10 @@
 package br.com.ubs;
 
-
-import java.sql.SQLException;
-
-import br.com.ubs.DAO.UtilJPA;
-
 public class Main {
 
-	/**
-	 * @param <E>
-	 * @param args
-	 * @throws SQLException 
-	 */
-	public static <E> void main(String[] args) throws SQLException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		
 	}
 }

@@ -15,7 +15,7 @@ public class UtilJPA {
 	private UtilJPA () {
 	
 		//Obtém o factory a partir da unidade de persistência
-		factory = Persistence.createEntityManagerFactory("estanciaProdPU");
+		factory = Persistence.createEntityManagerFactory("UBS_PU");
 		this.em = factory.createEntityManager();
 		this.et = getEntityManager().getTransaction();
 	}
