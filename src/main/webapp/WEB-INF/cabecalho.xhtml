@@ -1,0 +1,22 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+	<div id="topo">
+		<div id="topoEsquerda" style="float: left;">
+			<font face="Verdana" size="6"><b>UBS+</b></font><br /> <font
+				size="3">Nome da Unidade Básica de Saúde</font>
+		</div>
+		<div id="topoDireita" style="float: right;">
+			Login: Fellipe Soares | Sair 
+			<br /><br />
+			<p:clock rendered="true" pattern="dd.MM.yyyy HH:mm:ss" mode="server" /> <br />
+		</div>
+	</div>
+	<div id="menu" style="clear: both;">
+		<br />
+		<ui:include src="menu.xhtml" />
+	</div>
+</ui:composition>

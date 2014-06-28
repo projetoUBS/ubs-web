@@ -3,13 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:h="http://java.sun.com/jsf/html"
     xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:p="http://primefaces.org/ui">
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
 
   <h:head>
     <title>UBS+</title>
   </h:head>
   <h:body>
-    <h:outputText value ="Olá JSF!" />
+    <ui:include src="/WEB-INF/cabecalho.xhtml" />
     <br /><br />
     <p:dataTable>
     	<p:column headerText="Coluna1">
@@ -25,5 +26,6 @@
     		<h:outputText value="Linha4" />
     	</p:column>
     </p:dataTable>
+    <ui:include src="/WEB-INF/rodape.xhtml" />
    </h:body>
 </html>
