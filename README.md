@@ -7,7 +7,7 @@ O Projeto UBS é um projeto de Flávia Arrais, Francisco Jardel, Samanta Jacques
 
 ### Utilização do repositório (contribuição)
 
-##### Pré-requisitos
+#### Pré-requisitos
 
 * Git instalado no computador
 * Criar uma fork do projetoUBS para seu usuário no GitHub
@@ -21,7 +21,7 @@ Tutorial rápido do Git: [http://rogerdudler.github.io/git-guide/index.pt_BR.htm
 Instalação e Configuração do Git: [http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git]
 (http://git-scm.com/book/pt-br/Primeiros-passos-Instalando-Git}
 
-##### Configurando o diretório para utilização no projeto UBS+
+#### Configurando o diretório para utilização no projeto UBS+
 
 **Passo 1:** Dentro da pasta criada em sua máquina, inicie o Git Bash e digite:
 
@@ -42,7 +42,7 @@ Este comando irá iniciar o Git no diretório, e criar uma pasta .git
 
 `git checkout master`
 
-##### Mantendo seu repositório local atualizado
+#### Mantendo seu repositório local atualizado
 
 **IMPORTANTE!** Executar estes comandos abaixo todos os dias, ou ao menos antes de iniciar os trabalhos no projeto.
 
@@ -56,7 +56,7 @@ Mesclando seu repositório local com a branch do repositório do projeto
 
 `git merge upstream/master`
 
-##### Adicionando atualizações de seu repositório local para o Projeto
+#### Adicionando atualizações de seu repositório local para o Projeto
 
 Cada atualização nos arquivos do seu diretório local deve ser refletida (atualizar & confirmar). Para isso existem comandos executados para este propósito:
 
@@ -68,7 +68,7 @@ Confirmar as modificações: `git commit -m "confirmação da alteração do pro
 
 Submeter ao repositório pessoal do GitHub: `git push origin master`
 
-##### Realizando PULL REQUEST
+#### Realizando PULL REQUEST
 
 Para que suas alterações sejam refletidas no repositório do Projeto, é necessário um PULL REQUEST. 
 
