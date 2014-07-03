@@ -5,7 +5,10 @@
 	<persistence-unit name="UBS_PU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		
-		<class>br.com.ubs.model.Especialidade</class>
+		<!-- <class>br.com.ubs.model.Especialidade</class> -->
+		<class>br.com.ubs.model.Pessoa</class>
+		<class>br.com.ubs.model.Usuario</class>
+		<!-- <class>br.com.ubs.model.Paciente</class> -->
 		
 		<properties>
 
@@ -14,7 +17,7 @@
  
 			<!-- Mostra o SQL na console do Java-->
 			<property name="eclipselink.logging.level" value="FINE" />
-			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://mysql.ubs.kinghost.net:3306/ubs01"/>
 			<property name="javax.persistence.jdbc.user" value="ubs01"/>
 			<property name="javax.persistence.jdbc.password" value="a4w7f6q2"/>

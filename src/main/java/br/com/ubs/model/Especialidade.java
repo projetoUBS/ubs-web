@@ -20,7 +20,7 @@ public class Especialidade implements Serializable{
 	 
 	@Column (length = 60)
 	private String nome;
-	 
+	/* 
 	@ManyToMany(mappedBy="Especialidade")
 	private List<Medico> medico;
 	 

@@ -1,5 +1,8 @@
 package br.com.ubs.model;
 
+import javax.persistence.MappedSuperclass;
+
+/*@MappedSuperclass*/
 public class Paciente extends Usuario {
  
 	private int codigoSUS;
