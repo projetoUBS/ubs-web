@@ -1,19 +1,17 @@
 package br.com.ubs;
-
-
-import java.sql.SQLException;
-
-import br.com.ubs.DAO.UtilJPA;
+import br.com.ubs.model.Usuario;
 
 public class Main {
 
-	/**
-	 * @param <E>
-	 * @param args
-	 * @throws SQLException 
-	 */
-	public static <E> void main(String[] args) throws SQLException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		//Pessoa p = new Pessoa();
+		Usuario user = new Usuario();
+		
+		user.addPessoa()
+		
+		
 	}
+	
 }

@@ -1,13 +1,25 @@
 package br.com.ubs.model;
 
-import java.util.Date;
+import java.io.Serializable;
 
-public class Pessoa {
+import javax.persistence.Basic;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+/*@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)*/
+@MappedSuperclass
+public abstract class Pessoa{
  
+	/*@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)*/
+	@Basic
 	private int codigo;
 	 
+	@Column
 	private String cpf;
-	 
+	/* 
 	private String rg;
 	 
 	private String nome;
@@ -25,7 +37,7 @@ public class Pessoa {
 	private String cep;
 	 
 	private String telefone;
-	 
+	*/
 	public void addPessoa() {
 	 
 	}

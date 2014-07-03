@@ -5,7 +5,10 @@
 	<persistence-unit name="UBS_PU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		
-		<class>br.com.ubs.model.Especialidade</class>
+		<!-- <class>br.com.ubs.model.Especialidade</class> -->
+		<class>br.com.ubs.model.Pessoa</class>
+		<class>br.com.ubs.model.Usuario</class>
+		<!-- <class>br.com.ubs.model.Paciente</class> -->
 		
 		<properties>
 
