@@ -9,7 +9,7 @@ public class Main {
 		//Pessoa p = new Pessoa();
 		Usuario user = new Usuario();
 		
-		user.addPessoa()
+		user.addPessoa();
 		
 		
 	}
