@@ -1,4 +1,6 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
+
+import java.util.Date;
 
 public class Prontuario {
  
@@ -6,11 +8,15 @@ public class Prontuario {
 	 
 	private String diagnostico;
 	 
-	private Paciente paciente;
+	private Date dtInicioTratamento;
 	 
-	private Exame[] exame;
+	private Date dtFimTratamento;
 	 
-	private Descricao descricao;
+	private Paciente Paciente;
+	 
+	private Exame[] Exame;
+	 
+	private Descricao Descricao;
 	 
 	public void inserirProntuario() {
 	 

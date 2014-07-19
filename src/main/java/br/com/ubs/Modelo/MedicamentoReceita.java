@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class MedicamentoReceita {
  
@@ -6,9 +6,9 @@ public class MedicamentoReceita {
 	 
 	private String tipoAtendimento;
 	 
-	private Receita receita;
+	private Receita Receita;
 	 
-	private Medicamento medicamento;
+	private Medicamento Medicamento;
 	 
 }
  

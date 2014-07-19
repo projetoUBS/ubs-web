@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 import java.util.Date;
 
@@ -12,9 +12,9 @@ public class Pedido {
 	 
 	private int quantidade;
 	 
-	private Produto produto;
+	private Produto Produto;
 	 
-	private Estoquista estoquista;
+	private Estoquista Estoquista;
 	 
 	public void inserirPedido() {
 	 

@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Variavel {
  
@@ -6,9 +6,9 @@ public class Variavel {
 	 
 	private String nome;
 	 
-	private Procedimento[] procedimento;
+	private Procedimento[] Procedimento;
 	 
-	private Resultado resultado;
+	private Resultado Resultado;
 	 
 	public void inserirVariavel() {
 	 

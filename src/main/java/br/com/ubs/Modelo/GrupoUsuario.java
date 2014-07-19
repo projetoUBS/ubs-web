@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class GrupoUsuario extends Usuario {
  
@@ -8,7 +8,7 @@ public class GrupoUsuario extends Usuario {
 	 
 	private String descricao;
 	 
-	private Usuario[] usuario;
+	private Usuario[] Usuario;
 	 
 	public void definirPermissao() {
 	 

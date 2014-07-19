@@ -1,12 +1,12 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Resultado {
  
 	private String valor;
 	 
-	private Variavel variavel;
+	private Variavel Variavel;
 	 
-	private Exame exame;
+	private Exame Exame;
 	 
 	public void inserirResultado() {
 	 

@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Procedimento {
  
@@ -18,11 +18,11 @@ public class Procedimento {
 	 
 	private String nomeANS;
 	 
-	private Exame[] exame;
+	private Exame[] Exame;
 	 
-	private Variavel[] variavel;
+	private Variavel[] Variavel;
+	
 	 
-
 	public void inserirProcedimento() {
 	 
 	}

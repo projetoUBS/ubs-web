@@ -1,12 +1,10 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class AnalistaClinico extends Funcionario {
  
 	private int crf;
 	 
-	
-	
-	private Exame[] exame;
+	private Exame[] Exame;
 	 
 }
  

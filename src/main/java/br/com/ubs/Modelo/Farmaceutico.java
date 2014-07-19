@@ -1,10 +1,11 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Farmaceutico extends Funcionario {
  
 	private int crf;
 	 
-	private Receita[] receita;
+	private Receita Receita;
+
 	 
 }
  

@@ -1,5 +1,6 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
+import java.sql.Time;
 import java.util.Date;
 
 public class StatusVacina {
@@ -8,15 +9,15 @@ public class StatusVacina {
 	 
 	private Date dtAplicacao;
 	 
-	private int horaAplicacao;
+	private Time horaAplicacao;
 	 
 	private Date proximaDose;
 	 
-	private Vacina vacina;
+	private Vacina Vacina;
 	 
-	private Paciente paciente;
+	private Paciente Paciente;
 	 
-	private Enfermeiro enfermeiro;
+	private Enfermeiro Enfermeiro;
 	 
 	public void proximasDoses() {
 	 

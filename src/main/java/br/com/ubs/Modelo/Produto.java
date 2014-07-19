@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 import java.util.Date;
 
@@ -18,9 +18,9 @@ public class Produto {
 	 
 	private boolean tipoMedicamento;
 	 
-	private Medicamento medicamento;
+	private Medicamento Medicamento;
 	 
-	private Pedido pedido;
+	private Pedido Pedido;
 	 
 	public void inserirProduto() {
 	 

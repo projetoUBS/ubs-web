@@ -1,5 +1,6 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
+import java.sql.Time;
 import java.util.Date;
 
 public class Agenda {
@@ -8,23 +9,22 @@ public class Agenda {
 	 
 	private Date data;
 	 
-	private int horaInicio;
+	private Time horaInicio;
 	 
-	private int horaFim;
+	private Time horaFim;
 	 
 	private int intervalo;
 	 
-	private UBS ubs;
+	private UBS UBS;
 	 
-	private Medico medico;
+	private Medico Medico;
 	 
-	private Consulta consulta;
+	private Consulta Consulta;
 	 
-	private Atendente atendente;
+	private Atendente Atendente;
 	 
-	private Agenda agenda;
+	private Agenda Agenda;
 	 
-
 	public void inserirAgenda() {
 	 
 	}

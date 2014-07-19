@@ -1,18 +1,19 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
+import java.sql.Time;
 import java.util.Date;
 
 public class Descricao {
  
 	private Date data;
 	 
-	private Date hora;
+	private Time hora;
 	 
 	private String descricao;
 	 
-	private Prontuario prontuario;
+	private Prontuario Prontuario;
 	 
-	private Paciente paciente;
+	private Paciente Paciente;
 	 
 	public void inserirDescricao() {
 	 

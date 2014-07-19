@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Vacina {
  
@@ -14,7 +14,7 @@ public class Vacina {
 	 
 	private Boolean obrigatorio;
 	 
-	private StatusVacina statusVacina;
+	private StatusVacina StatusVacina;
 	 
 	public void incluirVacina() {
 	 

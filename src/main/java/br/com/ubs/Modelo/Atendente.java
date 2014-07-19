@@ -1,8 +1,8 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Atendente extends Funcionario {
  
-	private Agenda[] agenda;
+	private Agenda[] Agenda;
 	 
 }
  

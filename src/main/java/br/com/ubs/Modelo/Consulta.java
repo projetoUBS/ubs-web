@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 public class Consulta {
  
@@ -20,13 +20,13 @@ public class Consulta {
 	 
 	private String descricao;
 	 
-	private Agenda agenda;
+	private Agenda Agenda;
 	 
-	private Paciente paciente;
+	private Paciente Paciente;
 	 
-	private Receita[] receita;
+	private Receita[] Receita;
 	 
-	private Exame[] exame;
+	private Exame[] Exame;
 	 
 	public void agendarConsulta() {
 	 

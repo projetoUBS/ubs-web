@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 import java.util.Date;
 
@@ -20,7 +20,7 @@ public class UBS {
 	 
 	private Date dtEncerramento;
 	 
-	private Agenda[] agenda;
+	private Agenda[] Agenda;
 	 
 	public void inserirUBS() {
 	 

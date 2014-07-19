@@ -1,4 +1,4 @@
-package br.com.ubs.model;
+package br.com.ubs.Modelo;
 
 import java.util.Date;
 
@@ -12,15 +12,15 @@ public class Exame {
 	 
 	private int status;
 	 
-	private Prontuario prontuario;
+	private Prontuario Prontuario;
 	 
-	private AnalistaClinico analistaClinico;
+	private AnalistaClinico AnalistaClinico;
 	 
-	private Resultado resultado;
+	private Resultado Resultado;
 	 
-	private Procedimento[] procedimento;
+	private Procedimento[] Procedimento;
 	 
-	private Consulta consulta;
+	private Consulta Consulta;
 	 
 	public void inserirExame() {
 	 
