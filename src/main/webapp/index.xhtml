@@ -10,14 +10,19 @@
     <title>UBS+</title>
   </h:head>
   <h:body>
+  	<h:outputStylesheet library="css" name="ubs.css" />
     <ui:include src="/WEB-INF/cabecalho.xhtml" />
-    <br /><br />
-    <h:form>
-		<div style="border: 1px solid red; margin: 2px; height: 100px; width: 100px; float:left">
-		1
-		</div>
-	</h:form>
-	<br />
+    <div id="principal">
+	    <div id="lateral">
+	    	a
+	    </div>
+	    <div id="tela">
+	    	b
+	    </div>
+	    <div id="clear">
+	    	<p:separator />
+	    </div>
+    </div>
     <ui:include src="/WEB-INF/rodape.xhtml" />
    </h:body>
 </html>
