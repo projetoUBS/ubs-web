@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+#clear
+{
+	clear: both;
+}
+
+<!-- Cabeçalho -->
+
+#topo
+{
+	border: 2px solid blue; 
+	margin: 2px;
+}
+
+#topoEsquerda
+{
+	float: left; 
+	border: 1px solid red; 
+	margin: 2px;
+}
+
+#topoDireita
+{
+	float: right; 
+	border: 1px solid red; 
+	margin: 2px;
+}
+
+<!-- Principal -->
+
+#principal
+{
+	border: 2px solid blue; 
+	margin: 2px;
+}
+
+#lateral
+{
+	float: left;
+	border: 1px solid red; 
+	height: 400px; 
+	width: 300px; 
+	margin: 2px;
+}
+
+#tela
+{
+	float: left; 
+	border: 1px solid red; 
+	margin: 2px;
+}
+
+<!-- Rodapé -->
+
+#rodape
+{
+	
+}
