@@ -1,24 +1,20 @@
-package br.com.ubs.Modelo;
-
 import java.util.Date;
 
 public class Receita {
  
 	private int codigo;
 	 
-	private Date dtCriacao;
-	 
 	private Date dtValidade;
 	 
-	private Consulta Consulta;
+	private Farmaceutico farmaceutico;
 	 
-	private Medicamento[] Medicamento;
+	private Enfermeiro enfermeiro;
 	 
-	private Farmaceutico Farmaceutico;
+	private MedicamentoReceita[] medicamentoReceita;
 	 
-	private Enfermeiro Enfermeiro;
+	private Agenda agenda;
 	 
-	private MedicamentoReceita[] MedicamentoReceita;
+	private Paciente paciente;
 	 
 	public void inserirReceita() {
 	 

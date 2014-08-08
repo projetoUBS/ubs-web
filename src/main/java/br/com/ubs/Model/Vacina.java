@@ -1,5 +1,3 @@
-package br.com.ubs.Modelo;
-
 public class Vacina {
  
 	private int codigo;
@@ -14,7 +12,9 @@ public class Vacina {
 	 
 	private Boolean obrigatorio;
 	 
-	private StatusVacina StatusVacina;
+	private int idadePrimeiraDose;
+	 
+	private Vacinacao[] vacinacao;
 	 
 	public void incluirVacina() {
 	 

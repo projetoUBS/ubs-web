@@ -1,12 +1,10 @@
-package br.com.ubs.Modelo;
-
 public class Especialidade {
  
 	private int codigo;
 	 
 	private String nome;
 	 
-	private Medico[] Medico;
+	private Medico[] medico;
 	 
 	public void incluirEspecialidade() {
 	 
