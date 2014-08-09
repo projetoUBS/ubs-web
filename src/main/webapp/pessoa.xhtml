@@ -12,7 +12,7 @@
 	<h:outputStylesheet library="css" name="ubs.css" />
 	    <ui:include src="/WEB-INF/cabecalho.xhtml" />
 	    <h3 id="titulopagina">Cadastro de Pessoas</h3>
-	    <h:form>
+	    <h:form id="dadosPessoa">
 	    	<b>Dados Pessoais:</b>
 	    	<br />
 	    	
@@ -32,7 +32,7 @@
 			<br />
 	    	<h:outputLabel for="nome" value="Nome: " />
 	    	<p:inputText maxlenght="50" size="50" id="nome" 
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"	    		
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"   		
 	    		/>
 	    	<p:spacer height="25" />
 	    	
@@ -43,7 +43,7 @@
 	    	<br />
 	    	<h:outputLabel for="cpf" value="CPF: " />
 	    	<p:inputMask id="cpf" size="20" maxlenght="11" mask="999.999.999-99"
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"
 	    		/>
 	    	
 	    		
@@ -62,7 +62,7 @@
 	    	<p:spacer width="25" />	
 	    	<h:outputLabel for="dataNascimento" value="Data de Nascimento: " />
 	    	<p:inputMask id="dataNascimento" size="14" maxlenght="8" mask="99-99-9999"
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"
 	    		/>
 	    	<p:spacer height="25" />
 	    		
@@ -83,7 +83,7 @@
 	    	<br />
 	    	<h:outputLabel for="uf" value="UF: " />
 	    	<p:inputText maxlenght="2" size="2" id="uf"	    
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"		
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"		
 	    		/>
 	    		
 	    			    		
@@ -93,7 +93,7 @@
 	    	<p:spacer width="25" />
 	    	<h:outputLabel for="cidade" value="Cidade:  " />
 	    	<p:inputText maxlenght="40" size="40" id="cidade"	 
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"   		
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"   		
 	    		/>
 	    		
 	    		
@@ -102,7 +102,7 @@
 	    	<p:spacer width="25" />
 	    	<h:outputLabel for="bairro" value="Bairro:  " />
 	    	<p:inputText maxlenght="40" size="40" id="bairro"
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"
 	    		/>
 	    		
 	    		
@@ -139,7 +139,7 @@
 	    	<br />
 	    	<h:outputLabel for="usuario" value="Usuário:  " />
 	    	<p:inputText id="usuario"
-	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"	    		
+	    		required="FALSE" requiredMessage="Campo obrigatório não preenchido"	    		
 	    		/>
 	    	
 	    	
@@ -149,7 +149,7 @@
 	    	<p:spacer width="25" />
 	    	<h:outputLabel for="senha" value="Senha:  " />
 	    	<p:password id="senha"
-				required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+				required="FALSE" requiredMessage="Campo obrigatório não preenchido"
 	    		/>
 	    	<p:spacer height="25" />
 	    	
@@ -165,46 +165,67 @@
 	    		</p:selectManyCheckbox>
 	    	</h:panelGrid>
 	    	
+	    	<br /> 
+	    		    		
+    		<!--  Botão de Salvar  -->
+	    	<p:commandButton value="Gravar Dados" icon="ui-icon-disk" />		    	
 	    	
-	    	<!--  Botão de Salvar  -->
-	    	
-	    	<br />
-	    	<p:button 
-	    		value="Gravar Dados" icon="ui-icon-disk">
-	    	</p:button>
-	    	
-	    	
-	    	<!--  Botão Dados do Paciente --> 
-	    	
-
-	    	<p:button
-	    		disabled="#{PessoaBean.existePaciente(TRUE)}" value="Dados de Paciente">
-	    	</p:button>
-	    	
-	    	
+	    	<!--  Botão Dados do Paciente -->
+	    	<p:commandButton value="Dados de Paciente" type="button" onclick="PF('dlgDadosPaciente').show();" />			    	
+	    		
 	    	<!--  Botão Dados do Funcionário -->
-	    	
-	    	<p:button
-	    		disabled="#{PessoaBean.existePaciente(TRUE)}"
-	    		value="Dados de Paciente">
-	    	</p:button>
-	    	
+	    	<p:commandButton value="Dados de Funcionário" type="button" onclick="PF('dlgDadosFuncionario').show();" />
 	    	
 	    	<!--  Botão Incluir Pessoa -->
+	    	<p:commandButton value="Incluir Pessoa" onclick="pessoa.xhtml" icon="ui-icon-circle-plus" />	
 	    	
-	    	<p:button 
-	    		value="Incluir Pessoa">
-	    	</p:button>
-	    	
-	    	
-	    	<!--  Botão Excluir Pessoa -->
-	    	
-	    	<p:button 
-	    		value="Excluir Pessoa">
-	    	</p:button>
-	    	
-	    	
-	    </h:form>	    
+	    </h:form>
+	    
+	    <p:dialog id="dlgDadosPaciente" header="Dados do Paciente" widgetVar="dlgDadosPaciente" height="300" width="400"
+	    	modal="TRUE" draggable="FALSE" resizable="FALSE">
+	    	<h:form id="pac">
+		   		<h:panelGrid id="display" columns="2" cellpadding="4" >    
+		            <h:outputText for="codsus" value="Código SUS: " />
+		            <p:inputText id="codsus" />
+		            <h:outputText for="indpne" value="Portador de Necessidades Especiais: " />
+		            <p:selectBooleanCheckbox id="indpne" />
+		            <h:outputText for="faltas" value="Quant. de Faltas: " />
+		            <p:inputText readonly="TRUE" id="faltas" />
+		            <h:outputText for="observacoes" value="Observações: " />
+	            </h:panelGrid>
+	            <p:inputTextarea style="width:350px; height:100px;" id="observacoes" />
+	            <br /><br />
+	        	<center><p:commandButton value="Gravar Dados" icon="ui-icon-disk" /></center>
+        	</h:form>                
+		</p:dialog>
+		
+		<p:dialog id="dlgDadosFuncionario" header="Dados do Funcionário" widgetVar="dlgDadosFuncionario" height="280" width="250"
+	    	modal="TRUE" draggable="FALSE" resizable="FALSE">
+	    	<h:form id="func">
+	    		<h:panelGrid id="display" columns="2" cellpadding="4" >    
+	                <h:outputText for="codcbo" value="Código CBO: " />
+	                <p:inputText id="codcbo" />
+	                <h:outputText for="tipoFunc" value="Função: " />
+	                <p:selectOneMenu id="tipoFunc">
+			            <f:selectItem itemValue="atendente" itemLabel="Atendente" />
+			            <f:selectItem itemValue="medico" itemLabel="Médico" />
+			            <f:selectItem itemValue="enfermeiro" itemLabel="Enfermeiro" />
+			            <f:selectItem itemValue="analistaClinico" itemLabel="Analista Clínico" />
+			            <f:selectItem itemValue="farmaceutico" itemLabel="Farmacêutico" />
+			            <f:selectItem itemValue="estoquista" itemLabel="Estoquista" />
+			        </p:selectOneMenu>
+	                <h:outputText for="crm" value="CRM: " />
+	                <p:inputText id="crm" />
+	                <h:outputText for="crfAC" value="CRFAC: " />
+	                <p:inputText id="crfAC" />
+	                <h:outputText for="coren" value="COREN: " />
+	                <p:inputText id="coren" />
+	             </h:panelGrid>
+	             <br /><br />
+	             <center><p:commandButton value="Gravar Dados" icon="ui-icon-disk" /></center>
+             </h:form>              
+		</p:dialog>
+	    	    
 		<ui:include src="/WEB-INF/rodape.xhtml" />
 	</h:body>
 </html>
