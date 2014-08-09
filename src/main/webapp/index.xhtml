@@ -7,20 +7,17 @@
     xmlns:ui="http://java.sun.com/jsf/facelets">
 
   <h:head>
-    <title>UBS+</title>
+    <title>UBS+ Web</title>
   </h:head>
   <h:body>
   	<h:outputStylesheet library="css" name="ubs.css" />
     <ui:include src="/WEB-INF/cabecalho.xhtml" />
     <div id="principal">
-	    <div id="lateral">
-	    	a
-	    </div>
+  		<ui:include src="/WEB-INF/menu.xhtml" />
 	    <div id="tela">
-	    	b
+	    	<center>Algumas informações úteis da tela principal</center>
 	    </div>
 	    <div id="clear">
-	    	<p:separator />
 	    </div>
     </div>
     <ui:include src="/WEB-INF/rodape.xhtml" />

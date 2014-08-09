@@ -1,0 +1,21 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<div id="lateral">
+		<h:form>
+			<p:growl autoUpdate="true" />
+			<p:panelMenu style="width:250px">
+				<p:submenu label="Atendimento ao Paciente">
+					<p:menuitem value="Cadastro de Pessoas" url="pessoa.xhtml"/>
+				</p:submenu>
+				<p:separator />
+				<p:submenu label="Grupo B">
+					<p:menuitem value="Funcionalidade 2" />
+					<p:menuitem value="Funcionalidade 3" />
+				</p:submenu>
+			</p:panelMenu>
+		</h:form>
+	</div>	
+</ui:composition>
