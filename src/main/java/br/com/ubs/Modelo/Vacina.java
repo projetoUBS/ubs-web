@@ -14,7 +14,9 @@ public class Vacina {
 	 
 	private Boolean obrigatorio;
 	 
-	private StatusVacina StatusVacina;
+	private int idadePrimeiraDose;
+	 
+	private Vacinacao[] vacinacao;
 	 
 	public void incluirVacina() {
 	 

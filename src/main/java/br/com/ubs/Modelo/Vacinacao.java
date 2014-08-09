@@ -3,7 +3,7 @@ package br.com.ubs.Modelo;
 import java.sql.Time;
 import java.util.Date;
 
-public class StatusVacina {
+public class Vacinacao {
  
 	private String status;
 	 
@@ -13,11 +13,11 @@ public class StatusVacina {
 	 
 	private Date proximaDose;
 	 
-	private Vacina Vacina;
+	private Enfermeiro enfermeiro;
 	 
-	private Paciente Paciente;
+	//private Paciente paciente;
 	 
-	private Enfermeiro Enfermeiro;
+	private Vacina vacina;
 	 
 	public void proximasDoses() {
 	 

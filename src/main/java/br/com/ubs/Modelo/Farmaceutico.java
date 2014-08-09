@@ -4,8 +4,7 @@ public class Farmaceutico extends Funcionario {
  
 	private int crf;
 	 
-	private Receita Receita;
-
+	private Receita[] receita;
 	 
 }
  

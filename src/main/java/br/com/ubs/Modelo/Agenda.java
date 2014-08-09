@@ -13,23 +13,35 @@ public class Agenda {
 	 
 	private Time horaFim;
 	 
-	private int intervalo;
+	private int status;
 	 
-	private UBS UBS;
+	private int tagOnline;
 	 
-	private Medico Medico;
+	private int justCancelamento;
 	 
-	private Consulta Consulta;
+	private int justExclusao;
 	 
-	private Atendente Atendente;
+	private Atendente atendente;
 	 
-	private Agenda Agenda;
+	//private Paciente paciente;
+	 
+	private Medico medico;
+	 
+	private UBS uBS;
+	 
+	private Receita[] receita;
+	 
+	private Exame[] exame;
 	 
 	public void inserirAgenda() {
 	 
 	}
 	 
 	public void alterarAgenda() {
+	 
+	}
+	 
+	public void consultarAgenda() {
 	 
 	}
 	 
@@ -41,7 +53,19 @@ public class Agenda {
 	 
 	}
 	 
-	public void consultarAgenda() {
+	public void agendarConsulta() {
+	 
+	}
+	 
+	public void AlterarConsulta() {
+	 
+	}
+	 
+	public void excluirConsulta() {
+	 
+	}
+	 
+	public void pesquisarConsulta() {
 	 
 	}
 	 

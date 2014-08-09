@@ -1,12 +1,15 @@
 package br.com.ubs.Modelo;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Enfermeiro extends Funcionario {
  
 	private int coren;
 	 
-	private StatusVacina StatusVacina;
+	private Receita[] receita;
 	 
-	private Receita[] Receita;
+	private Vacinacao[] vacinacao;
 	 
 }
  

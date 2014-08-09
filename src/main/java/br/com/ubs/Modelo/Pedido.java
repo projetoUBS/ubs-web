@@ -4,37 +4,17 @@ import java.util.Date;
 
 public class Pedido {
  
-	private int codigo;
+	private int id;
 	 
 	private Date dtSolicitacao;
 	 
 	private Date dtEntrega;
 	 
-	private int quantidade;
+	private Funcionario funcionario;
 	 
-	private Produto Produto;
+	private Estoquista estoquista;
 	 
-	private Estoquista Estoquista;
-	 
-	public void inserirPedido() {
-	 
-	}
-	 
-	public void alterarPedido() {
-	 
-	}
-	 
-	public void excluirPedido() {
-	 
-	}
-	 
-	public void fecharPedido() {
-	 
-	}
-	 
-	public void consultarPedido() {
-	 
-	}
+	private ProdutoPedido[] produtoPedido;
 	 
 }
  

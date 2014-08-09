@@ -2,27 +2,15 @@ package br.com.ubs.Modelo;
 
 public class Resultado {
  
-	private String valor;
+	private String resultado;
 	 
-	private Variavel Variavel;
+	private Variavel variavel;
 	 
-	private Exame Exame;
+	private Procedimento procedimento;
 	 
-	public void inserirResultado() {
+	private Exame exame;
 	 
-	}
-	 
-	public void alterarResultado() {
-	 
-	}
-	 
-	public void publicarResultado() {
-	 
-	}
-	 
-	public void consultarResultado() {
-	 
-	}
+	private AnalistaClinico analistaClinico;
 	 
 }
  

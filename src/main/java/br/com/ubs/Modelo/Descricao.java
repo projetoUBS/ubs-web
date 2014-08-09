@@ -5,15 +5,15 @@ import java.util.Date;
 
 public class Descricao {
  
+	private int codigo;
+	 
 	private Date data;
 	 
 	private Time hora;
 	 
 	private String descricao;
 	 
-	private Prontuario Prontuario;
-	 
-	private Paciente Paciente;
+	private Prontuario prontuario;
 	 
 	public void inserirDescricao() {
 	 

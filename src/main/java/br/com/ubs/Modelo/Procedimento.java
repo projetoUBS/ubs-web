@@ -2,42 +2,21 @@ package br.com.ubs.Modelo;
 
 public class Procedimento {
  
-	private int codigo;
+	private int cod;
 	 
-	private boolean rolANS;
+	private String nome;
 	 
-	private String codigoTUSS;
+	private int codTUSS;
 	 
-	private String nomeTUSS;
+	private int codAMB;
 	 
-	private String capitulo;
+	private int valorReferencia;
 	 
-	private String grupo;
+	private Exame[] exame;
 	 
-	private String subgrupo;
+	private Resultado[] resultado;
 	 
-	private String nomeANS;
-	 
-	private Exame[] Exame;
-	 
-	private Variavel[] Variavel;
-	
-	 
-	public void inserirProcedimento() {
-	 
-	}
-	 
-	public void excluirProcedimento() {
-	 
-	}
-	 
-	public void consultarProcedimento() {
-	 
-	}
-	 
-	public void alterarProcedimento() {
-	 
-	}
+	private Grupo grupo;
 	 
 }
  

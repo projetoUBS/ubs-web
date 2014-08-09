@@ -4,9 +4,9 @@ public class Medico extends Funcionario {
  
 	private int crm;
 	 
-	private Especialidade[] Especialidade;
+	private Especialidade[] especialidade;
 	 
-	private Agenda[] Agenda;
+	private Agenda[] agenda;
 	 
 }
  

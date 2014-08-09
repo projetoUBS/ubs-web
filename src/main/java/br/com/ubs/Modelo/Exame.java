@@ -6,21 +6,15 @@ public class Exame {
  
 	private int codigo;
 	 
-	private Date dtPrescricao;
-	 
 	private Date dtValidade;
 	 
 	private int status;
 	 
-	private Prontuario Prontuario;
+	private Agenda agenda;
 	 
-	private AnalistaClinico AnalistaClinico;
+	private Procedimento[] procedimento;
 	 
-	private Resultado Resultado;
-	 
-	private Procedimento[] Procedimento;
-	 
-	private Consulta Consulta;
+	private Resultado[] resultado;
 	 
 	public void inserirExame() {
 	 

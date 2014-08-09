@@ -6,9 +6,9 @@ public class MedicamentoReceita {
 	 
 	private String tipoAtendimento;
 	 
-	private Receita Receita;
+	private Receita receita;
 	 
-	private Medicamento Medicamento;
+	private Medicamento medicamento;
 	 
 }
  

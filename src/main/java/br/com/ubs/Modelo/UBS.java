@@ -20,7 +20,9 @@ public class UBS {
 	 
 	private Date dtEncerramento;
 	 
-	private Agenda[] Agenda;
+	private Agenda[] agenda;
+	 
+	private Funcionario[] funcionario;
 	 
 	public void inserirUBS() {
 	 

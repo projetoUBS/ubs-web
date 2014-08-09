@@ -1,7 +1,9 @@
 package br.com.ubs.Modelo;
 
-public class Paciente extends Usuario {
- 
+
+
+public class Paciente  {
+	 
 	private int codigoSUS;
 	 
 	private String observacoes;
@@ -10,13 +12,13 @@ public class Paciente extends Usuario {
 	 
 	private boolean indPNE;
 	 
-	private StatusVacina StatusVacina;
+	private Agenda[] agenda;
 	 
-	private Consulta Consulta;
+	private Vacinacao[] vacinacao;
 	 
-	private Prontuario[] Prontuario;
+	private Prontuario[] prontuario;
 	 
-	private Descricao Descricao;
+	private Receita[] receita;
 	 
 	public void bloquearMarcacaoOnline() {
 	 

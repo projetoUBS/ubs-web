@@ -18,9 +18,7 @@ public class Produto {
 	 
 	private boolean tipoMedicamento;
 	 
-	private Medicamento Medicamento;
-	 
-	private Pedido Pedido;
+	private ProdutoPedido[] produtoPedido;
 	 
 	public void inserirProduto() {
 	 

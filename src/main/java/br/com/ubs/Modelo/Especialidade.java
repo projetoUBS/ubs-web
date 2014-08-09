@@ -6,7 +6,7 @@ public class Especialidade {
 	 
 	private String nome;
 	 
-	private Medico[] Medico;
+	private Medico[] medico;
 	 
 	public void incluirEspecialidade() {
 	 
