@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 
@@ -68,28 +68,145 @@ public class Pessoa {
 	 
 	@Column(nullable=true)
 	private int ind_adm;
-	 
-	public void addPessoa() {
-	 
-	}
-	 
-	public void alterarPessoa() {
-	 
-	}
-	 
-	public void excluirPessoa() {
-	 
-	}
-	 
-	public void consultarPessoa() {
-	 
-	}
-	 
-	public void efetuarLogin() {
-	 
-	}
+
 	
-	//Gerar método: AlterarSenha
-	 
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public Date getDtNascimento() {
+		return dtNascimento;
+	}
+
+	public void setDtNascimento(Date dtNascimento) {
+		this.dtNascimento = dtNascimento;
+	}
+
+	public String getLogradouro() {
+		return logradouro;
+	}
+
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public int getInd_func() {
+		return ind_func;
+	}
+
+	public void setInd_func(int ind_func) {
+		this.ind_func = ind_func;
+	}
+
+	public int getInd_paciente() {
+		return ind_paciente;
+	}
+
+	public void setInd_paciente(int ind_paciente) {
+		this.ind_paciente = ind_paciente;
+	}
+
+	public int getInd_adm() {
+		return ind_adm;
+	}
+
+	public void setInd_adm(int ind_adm) {
+		this.ind_adm = ind_adm;
+	}
+	 	 
 }
  

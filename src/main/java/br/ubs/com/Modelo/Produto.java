@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 import java.util.List;
@@ -43,21 +43,72 @@ public class Produto {
 	 
 	@OneToMany(mappedBy = "Produto")  
 	private List <Estoque> estoque;
-	 
-	public void inserirProduto() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarPoduto() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void excluirProduto() {
-	 
+
+	public String getNome() {
+		return nome;
 	}
-	 
-	public void consultarProduto() {
-	 
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Date getDtValidade() {
+		return dtValidade;
+	}
+
+	public void setDtValidade(Date dtValidade) {
+		this.dtValidade = dtValidade;
+	}
+
+	public String getUnidadeMedida() {
+		return unidadeMedida;
+	}
+
+	public void setUnidadeMedida(String unidadeMedida) {
+		this.unidadeMedida = unidadeMedida;
+	}
+
+	public int getQuantMin() {
+		return quantMin;
+	}
+
+	public void setQuantMin(int quantMin) {
+		this.quantMin = quantMin;
+	}
+
+	public boolean isTipoMedicamento() {
+		return tipoMedicamento;
+	}
+
+	public void setTipoMedicamento(boolean tipoMedicamento) {
+		this.tipoMedicamento = tipoMedicamento;
+	}
+
+	public List<ProdutoPedido> getProdutoPedido() {
+		return produtoPedido;
+	}
+
+	public void setProdutoPedido(List<ProdutoPedido> produtoPedido) {
+		this.produtoPedido = produtoPedido;
+	}
+
+	public List<Estoque> getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(List<Estoque> estoque) {
+		this.estoque = estoque;
 	}
 	 
 }

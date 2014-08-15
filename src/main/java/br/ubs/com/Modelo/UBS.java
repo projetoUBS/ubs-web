@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package  br.ubs.com.modelo;
 
 import java.util.Calendar;
 import java.util.List;
@@ -11,11 +11,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
+@NamedQueries({
+	@NamedQuery(name = "UBS.findByLocalidade", query = "SELECT u FROM UBS u WHERE u.localidade = :localidade ORDER BY u.nome") })
 public class UBS {
 	
 	@Id
@@ -50,21 +54,88 @@ public class UBS {
 
 	@OneToMany(mappedBy = "ubs")	
 	private List <Estoque> estoque;
-	 
-	public void inserirUBS() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarUBS() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void excluirUBS() {
-	 
+
+	public String getLocalidade() {
+		return localidade;
 	}
-	 
-	public void consultarUBS() {
-	 
+
+	public void setLocalidade(String localidade) {
+		this.localidade = localidade;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getResponsavel() {
+		return responsavel;
+	}
+
+	public void setResponsavel(String responsavel) {
+		this.responsavel = responsavel;
+	}
+
+	public Calendar getDtCadastro() {
+		return dtCadastro;
+	}
+
+	public void setDtCadastro(Calendar dtCadastro) {
+		this.dtCadastro = dtCadastro;
+	}
+
+	public Calendar getDtEncerramento() {
+		return dtEncerramento;
+	}
+
+	public void setDtEncerramento(Calendar dtEncerramento) {
+		this.dtEncerramento = dtEncerramento;
+	}
+
+	public List<Agenda> getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(List<Agenda> agenda) {
+		this.agenda = agenda;
+	}
+
+	public List<Funcionario> getFuncionario() {
+		return funcionario;
+	}
+
+	public void setFuncionario(List<Funcionario> funcionario) {
+		this.funcionario = funcionario;
+	}
+
+	public List<Estoque> getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(List<Estoque> estoque) {
+		this.estoque = estoque;
 	}
 	 
 }

@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.io.Serializable;
 

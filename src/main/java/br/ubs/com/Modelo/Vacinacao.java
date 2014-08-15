@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Calendar;
 
@@ -41,17 +41,64 @@ public class Vacinacao {
 	@ManyToOne
 	@JoinColumn(name="ID_VACINA")
 	private Vacina vacina;
+
 	
-	public void proximasDoses() {
-	 
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alertaVacinacao() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void confirmaAplicacao() {
-	 
+
+	public short getStatus() {
+		return status;
+	}
+
+	public void setStatus(short status) {
+		this.status = status;
+	}
+
+	public Calendar getDtHrAplicacao() {
+		return dtHrAplicacao;
+	}
+
+	public void setDtHrAplicacao(Calendar dtHrAplicacao) {
+		this.dtHrAplicacao = dtHrAplicacao;
+	}
+
+	public Calendar getProximaDose() {
+		return proximaDose;
+	}
+
+	public void setProximaDose(Calendar proximaDose) {
+		this.proximaDose = proximaDose;
+	}
+
+	public Enfermeiro getEnfermeiro() {
+		return enfermeiro;
+	}
+
+	public void setEnfermeiro(Enfermeiro enfermeiro) {
+		this.enfermeiro = enfermeiro;
+	}
+
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+
+	public Vacina getVacina() {
+		return vacina;
+	}
+
+	public void setVacina(Vacina vacina) {
+		this.vacina = vacina;
 	}
 	 
 }

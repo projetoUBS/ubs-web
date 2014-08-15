@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -21,23 +21,32 @@ public class Especialidade {
 
 	@ManyToMany(mappedBy="Especialidade")
 	private List <Medico> medico;
-		
-	 
-	public void incluirEspecialidade() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarEspecialidade() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void excluirEspecialidade() {
-	 
+
+	public String getNome() {
+		return nome;
 	}
-	 
-	public void consultarEspecialidade() {
-	 
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	 
+
+	public List<Medico> getMedico() {
+		return medico;
+	}
+
+	public void setMedico(List<Medico> medico) {
+		this.medico = medico;
+	}
 }
  

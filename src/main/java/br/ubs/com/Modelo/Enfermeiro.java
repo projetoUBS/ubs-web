@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -19,6 +19,34 @@ public class Enfermeiro extends Funcionario {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Enfermeiro")
 	private List <Vacinacao> vacinacao;
+
+	
+	//Getters e Setters
+	
+	public int getCoren() {
+		return coren;
+	}
+
+	public void setCoren(int coren) {
+		this.coren = coren;
+	}
+
+	public List<Receita> getReceita() {
+		return receita;
+	}
+
+	public void setReceita(List<Receita> receita) {
+		this.receita = receita;
+	}
+
+	public List<Vacinacao> getVacinacao() {
+		return vacinacao;
+	}
+
+	public void setVacinacao(List<Vacinacao> vacinacao) {
+		this.vacinacao = vacinacao;
+	}
 	 
+	
 }
  

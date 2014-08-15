@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -31,5 +31,49 @@ public class Resultado {
 	 
 	@Column(nullable=true)
 	private String resultado;
+
+	
+	//Getters e Setters
+	
+	public Variavel getVariavel() {
+		return variavel;
+	}
+
+	public void setVariavel(Variavel variavel) {
+		this.variavel = variavel;
+	}
+
+	public Procedimento getProcedimento() {
+		return procedimento;
+	}
+
+	public void setProcedimento(Procedimento procedimento) {
+		this.procedimento = procedimento;
+	}
+
+	public Exame getExame() {
+		return exame;
+	}
+
+	public void setExame(Exame exame) {
+		this.exame = exame;
+	}
+
+	public AnalistaClinico getAnalistaClinico() {
+		return analistaClinico;
+	}
+
+	public void setAnalistaClinico(AnalistaClinico analistaClinico) {
+		this.analistaClinico = analistaClinico;
+	}
+
+	public String getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(String resultado) {
+		this.resultado = resultado;
+	}
+
 }
  

@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,6 +23,32 @@ public class Estoque {
 	@ManyToOne
 	@JoinColumn(name = "ID_PRODUTO")
 	private Produto produto;
-	 
+
+	
+	//Getters e Setters
+	
+	public int getQuantidadeAtual() {
+		return quantidadeAtual;
+	}
+
+	public void setQuantidadeAtual(int quantidadeAtual) {
+		this.quantidadeAtual = quantidadeAtual;
+	}
+
+	public UBS getUbs() {
+		return ubs;
+	}
+
+	public void setUbs(UBS ubs) {
+		this.ubs = ubs;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
 }
  

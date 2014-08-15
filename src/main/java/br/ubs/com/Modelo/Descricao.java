@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Calendar;
 
@@ -33,18 +33,48 @@ public class Descricao {
 	@ManyToOne
 	@JoinColumn(name="ID_PRONTUARIO")
 	private Prontuario prontuario;
-	 
-	public void inserirDescricao() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarDescricao() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void consultarDescricao() {
-	 
+
+	public Calendar getData() {
+		return data;
 	}
-	 
+
+	public void setData(Calendar data) {
+		this.data = data;
+	}
+
+	public Calendar getHora() {
+		return hora;
+	}
+
+	public void setHora(Calendar hora) {
+		this.hora = hora;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public Prontuario getProntuario() {
+		return prontuario;
+	}
+
+	public void setProntuario(Prontuario prontuario) {
+		this.prontuario = prontuario;
+	}
 }
  

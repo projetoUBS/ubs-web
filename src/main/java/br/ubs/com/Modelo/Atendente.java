@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -12,6 +12,16 @@ public class Atendente extends Funcionario {
  
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Atendente")
 	private List <Agenda> agenda;
-	 
+
+	
+	//Getters e Setters
+	
+	public List<Agenda> getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(List<Agenda> agenda) {
+		this.agenda = agenda;
+	}
 }
  

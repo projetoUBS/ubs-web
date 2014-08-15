@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -14,6 +14,25 @@ public class Medicamento extends Produto{
 	
 	@OneToMany(mappedBy = "Medicamento")
 	private List <MedicamentoReceita> medicamentoReceita;
+
+	
+	//Getters e Setters
+	
+	public String getClassificacao() {
+		return classificacao;
+	}
+
+	public void setClassificacao(String classificacao) {
+		this.classificacao = classificacao;
+	}
+
+	public List<MedicamentoReceita> getMedicamentoReceita() {
+		return medicamentoReceita;
+	}
+
+	public void setMedicamentoReceita(List<MedicamentoReceita> medicamentoReceita) {
+		this.medicamentoReceita = medicamentoReceita;
+	}
 	 
 }
  

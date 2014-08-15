@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 import java.util.List;
@@ -43,26 +43,65 @@ public class Receita {
 	@ManyToOne
 	@JoinColumn(name="id_paciente")
 	private Paciente paciente;
-	 
-	public void inserirReceita() {
-	 
+
+
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarReceita() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void consultarReceita() {
-	 
+
+	public Date getDtValidade() {
+		return dtValidade;
 	}
-	 
-	public void associarMedicamento() {
-	 
+
+	public void setDtValidade(Date dtValidade) {
+		this.dtValidade = dtValidade;
 	}
-	 
-	public void entregarMedicamento() {
-	 
+
+	public Farmaceutico getFarmaceutico() {
+		return farmaceutico;
 	}
-	 
+
+	public void setFarmaceutico(Farmaceutico farmaceutico) {
+		this.farmaceutico = farmaceutico;
+	}
+
+	public Enfermeiro getEnfermeiro() {
+		return enfermeiro;
+	}
+
+	public void setEnfermeiro(Enfermeiro enfermeiro) {
+		this.enfermeiro = enfermeiro;
+	}
+
+	public List<MedicamentoReceita> getMedicamentoReceita() {
+		return medicamentoReceita;
+	}
+
+	public void setMedicamentoReceita(List<MedicamentoReceita> medicamentoReceita) {
+		this.medicamentoReceita = medicamentoReceita;
+	}
+
+	public Agenda getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
+	}
+
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+ 
 }
  

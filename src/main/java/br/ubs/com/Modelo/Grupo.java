@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -26,22 +26,41 @@ public class Grupo {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Grupo")
 	private List <Procedimento> procedimento;
-	 
-	public void inserirGrupo() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarGrupo() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void consultarGrupo() {
-	 
+
+	public int getCodigoTuss() {
+		return codigoTuss;
 	}
-	 
-	public void excluirGrupo() {
-	 
+
+	public void setCodigoTuss(int codigoTuss) {
+		this.codigoTuss = codigoTuss;
 	}
-	 
+
+	public int getNome() {
+		return nome;
+	}
+
+	public void setNome(int nome) {
+		this.nome = nome;
+	}
+
+	public List<Procedimento> getProcedimento() {
+		return procedimento;
+	}
+
+	public void setProcedimento(List<Procedimento> procedimento) {
+		this.procedimento = procedimento;
+	}
+	 	 
 }
  

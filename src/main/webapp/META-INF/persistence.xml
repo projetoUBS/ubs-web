@@ -5,34 +5,34 @@
 	
 	<persistence-unit name="UBS_PU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>br.ubs.com.Modelo.Pessoa</class>
-		<class>br.ubs.com.Modelo.Funcionario</class>
-		<class>br.ubs.com.Modelo.Atendente</class>
-		<class>br.ubs.com.Modelo.Agenda</class>
-		<class>br.ubs.com.Modelo.Receita</class>
-		<class>br.ubs.com.Modelo.Resultado</class>
-		<class>br.ubs.com.Modelo.Descricao</class>
-		<class>br.ubs.com.Modelo.ProdutoPedido</class>
-		<class>br.ubs.com.Modelo.Farmaceutico</class>
-		<class>br.ubs.com.Modelo.MedicamentoReceita</class>
-		<class>br.ubs.com.Modelo.Medico</class>
-		<class>br.ubs.com.Modelo.Exame</class>
-		<class>br.ubs.com.Modelo.Procedimento</class>
-		<class>br.ubs.com.Modelo.Vacinacao</class>
-		<class>br.ubs.com.Modelo.Paciente</class>
-		<class>br.ubs.com.Modelo.Variavel</class>
-		<class>br.ubs.com.Modelo.AnalistaClinico</class>
-		<class>br.ubs.com.Modelo.Medicamento</class>
-		<class>br.ubs.com.Modelo.Pedido</class>
-		<class>br.ubs.com.Modelo.Especialidade</class>
-		<class>br.ubs.com.Modelo.Prontuario</class>
-		<class>br.ubs.com.Modelo.Grupo</class>
-		<class>br.ubs.com.Modelo.Vacina</class>
-		<class>br.ubs.com.Modelo.Enfermeiro</class>
-		<class>br.ubs.com.Modelo.Estoquista</class>
-		<class>br.ubs.com.Modelo.UBS</class>
-		<class>br.ubs.com.Modelo.Estoque</class>
-		<class>br.ubs.com.Modelo.Produto</class> 
+		<class>br.ubs.com.modelo.Pessoa</class>
+		<class>br.ubs.com.modelo.Funcionario</class>
+		<class>br.ubs.com.modelo.Atendente</class>
+		<class>br.ubs.com.modelo.Agenda</class>
+		<class>br.ubs.com.modelo.Receita</class>
+		<class>br.ubs.com.modelo.Resultado</class>
+		<class>br.ubs.com.modelo.Descricao</class>
+		<class>br.ubs.com.modelo.ProdutoPedido</class>
+		<class>br.ubs.com.modelo.Farmaceutico</class>
+		<class>br.ubs.com.modelo.MedicamentoReceita</class>
+		<class>br.ubs.com.modelo.Medico</class>
+		<class>br.ubs.com.modelo.Exame</class>
+		<class>br.ubs.com.modelo.Procedimento</class>
+		<class>br.ubs.com.modelo.Vacinacao</class>
+		<class>br.ubs.com.modelo.Paciente</class>
+		<class>br.ubs.com.modelo.Variavel</class>
+		<class>br.ubs.com.modelo.AnalistaClinico</class>
+		<class>br.ubs.com.modelo.Medicamento</class>
+		<class>br.ubs.com.modelo.Pedido</class>
+		<class>br.ubs.com.modelo.Especialidade</class>
+		<class>br.ubs.com.modelo.Prontuario</class>
+		<class>br.ubs.com.modelo.Grupo</class>
+		<class>br.ubs.com.modelo.Vacina</class>
+		<class>br.ubs.com.modelo.Enfermeiro</class>
+		<class>br.ubs.com.modelo.Estoquista</class>
+		<class>br.ubs.com.modelo.UBS</class>
+		<class>br.ubs.com.modelo.Estoque</class>
+		<class>br.ubs.com.modelo.Produto</class> 
 				
 			<properties>
 			<!-- Não mostra o SQL na console do java -->

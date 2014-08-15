@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 import java.util.List;
@@ -40,17 +40,56 @@ public class Prontuario {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Prontuario")
 	private List <Descricao> descricao;
-	 
-	public void inserirProntuario() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarProntuario() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void consultarProntuario() {
-	 
+
+	public String getDiagnostico() {
+		return diagnostico;
+	}
+
+	public void setDiagnostico(String diagnostico) {
+		this.diagnostico = diagnostico;
+	}
+
+	public Date getDtInicioTratamento() {
+		return dtInicioTratamento;
+	}
+
+	public void setDtInicioTratamento(Date dtInicioTratamento) {
+		this.dtInicioTratamento = dtInicioTratamento;
+	}
+
+	public Date getDtFimTratamento() {
+		return dtFimTratamento;
+	}
+
+	public void setDtFimTratamento(Date dtFimTratamento) {
+		this.dtFimTratamento = dtFimTratamento;
+	}
+
+	public Paciente getPaciente() {
+		return paciente;
+	}
+
+	public void setPaciente(Paciente paciente) {
+		this.paciente = paciente;
+	}
+
+	public List<Descricao> getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(List<Descricao> descricao) {
+		this.descricao = descricao;
 	}
 	 
 }

@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -23,22 +23,33 @@ public class ProdutoPedido {
 	@ManyToOne
 	@JoinColumn(name = "id_pedido")
 	private Pedido pedido;
-	 
-	public void inserirItem() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getQuantidade() {
+		return quantidade;
 	}
-	 
-	public void alterarItem() {
-	 
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
 	}
-	 
-	public void excluirPedido() {
-	 
+
+	public Produto getProduto() {
+		return produto;
 	}
-	 
-	public void consultarItem() {
-	 
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
 	}
-	 
+
+	public Pedido getPedido() {
+		return pedido;
+	}
+
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
+	}
+		 
 }
  

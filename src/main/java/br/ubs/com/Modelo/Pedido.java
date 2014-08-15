@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 import java.util.List;
@@ -39,6 +39,57 @@ public class Pedido {
 	 
 	@OneToMany(mappedBy = "Pedido")
 	private List <ProdutoPedido> produtoPedido;
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Date getDtSolicitacao() {
+		return dtSolicitacao;
+	}
+
+	public void setDtSolicitacao(Date dtSolicitacao) {
+		this.dtSolicitacao = dtSolicitacao;
+	}
+
+	public Date getDtEntrega() {
+		return dtEntrega;
+	}
+
+	public void setDtEntrega(Date dtEntrega) {
+		this.dtEntrega = dtEntrega;
+	}
+
+	public Funcionario getFuncionario() {
+		return funcionario;
+	}
+
+	public void setFuncionario(Funcionario funcionario) {
+		this.funcionario = funcionario;
+	}
+
+	public Estoquista getEstoquista() {
+		return estoquista;
+	}
+
+	public void setEstoquista(Estoquista estoquista) {
+		this.estoquista = estoquista;
+	}
+
+	public List<ProdutoPedido> getProdutoPedido() {
+		return produtoPedido;
+	}
+
+	public void setProdutoPedido(List<ProdutoPedido> produtoPedido) {
+		this.produtoPedido = produtoPedido;
+	}
 	 
 }
  

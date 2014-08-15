@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.Date;
 import java.util.List;
@@ -44,22 +44,56 @@ public class Exame {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Exame")
 	private List <Resultado> resultado;
-	 
-	public void inserirExame() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarExame() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void alterarStatus() {
-	 
+
+	public Date getDtValidade() {
+		return dtValidade;
 	}
-	 
-	public void consultarExame() {
-	 
+
+	public void setDtValidade(Date dtValidade) {
+		this.dtValidade = dtValidade;
 	}
-	 
+
+	public short getStatus() {
+		return status;
+	}
+
+	public void setStatus(short status) {
+		this.status = status;
+	}
+
+	public Agenda getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
+	}
+
+	public List<Procedimento> getProcedimento() {
+		return procedimento;
+	}
+
+	public void setProcedimento(List<Procedimento> procedimento) {
+		this.procedimento = procedimento;
+	}
+
+	public List<Resultado> getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(List<Resultado> resultado) {
+		this.resultado = resultado;
+	}
 }
  

@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -38,22 +38,73 @@ public class Vacina {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Vacina")
 	private List <Vacinacao> vacinacao;
-	 
-	public void incluirVacina() {
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
 	}
-	 
-	public void alterarVacina() {
-	 
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	 
-	public void excluirVacina() {
-	 
+
+	public String getNome() {
+		return nome;
 	}
-	 
-	public void consultarVacina() {
-	 
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	 
+
+	public int getIntervaloDose() {
+		return intervaloDose;
+	}
+
+	public void setIntervaloDose(int intervaloDose) {
+		this.intervaloDose = intervaloDose;
+	}
+
+	public int getQuantDose() {
+		return quantDose;
+	}
+
+	public void setQuantDose(int quantDose) {
+		this.quantDose = quantDose;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public Boolean getObrigatorio() {
+		return obrigatorio;
+	}
+
+	public void setObrigatorio(Boolean obrigatorio) {
+		this.obrigatorio = obrigatorio;
+	}
+
+	public int getIdadePrimeiraDose() {
+		return idadePrimeiraDose;
+	}
+
+	public void setIdadePrimeiraDose(int idadePrimeiraDose) {
+		this.idadePrimeiraDose = idadePrimeiraDose;
+	}
+
+	public List<Vacinacao> getVacinacao() {
+		return vacinacao;
+	}
+
+	public void setVacinacao(List<Vacinacao> vacinacao) {
+		this.vacinacao = vacinacao;
+	}
+	 	 
 }
  

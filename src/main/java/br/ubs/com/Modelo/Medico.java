@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -25,6 +25,33 @@ public class Medico extends Funcionario {
 	 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "Medico")
 	private List<Agenda> agenda;
+
+	
+	//Getters e Setters
+	
+	public int getCrm() {
+		return crm;
+	}
+
+	public void setCrm(int crm) {
+		this.crm = crm;
+	}
+
+	public List<Especialidade> getEspecialidade() {
+		return especialidade;
+	}
+
+	public void setEspecialidade(List<Especialidade> especialidade) {
+		this.especialidade = especialidade;
+	}
+
+	public List<Agenda> getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(List<Agenda> agenda) {
+		this.agenda = agenda;
+	}
 	 
 }
  

@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -40,6 +40,73 @@ public class Procedimento {
 	@ManyToOne
 	@JoinColumn(name="id_grupo")
 	private Grupo grupo;
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getCodTUSS() {
+		return codTUSS;
+	}
+
+	public void setCodTUSS(int codTUSS) {
+		this.codTUSS = codTUSS;
+	}
+
+	public int getCodAMB() {
+		return codAMB;
+	}
+
+	public void setCodAMB(int codAMB) {
+		this.codAMB = codAMB;
+	}
+
+	public int getValorReferencia() {
+		return valorReferencia;
+	}
+
+	public void setValorReferencia(int valorReferencia) {
+		this.valorReferencia = valorReferencia;
+	}
+
+	public List<Exame> getExame() {
+		return exame;
+	}
+
+	public void setExame(List<Exame> exame) {
+		this.exame = exame;
+	}
+
+	public List<Resultado> getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(List<Resultado> resultado) {
+		this.resultado = resultado;
+	}
+
+	public Grupo getGrupo() {
+		return grupo;
+	}
+
+	public void setGrupo(Grupo grupo) {
+		this.grupo = grupo;
+	}
 	 
 }
  

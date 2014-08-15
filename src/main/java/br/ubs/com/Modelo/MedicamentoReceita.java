@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,6 +26,41 @@ public class MedicamentoReceita {
 	@ManyToOne
 	@JoinColumn(name = "id_medicamento")
 	private Medicamento medicamento;
+
+	
+	//Getters e Setters
+	
+	public short getStatus() {
+		return status;
+	}
+
+	public void setStatus(short status) {
+		this.status = status;
+	}
+
+	public short getTipoAtendimento() {
+		return tipoAtendimento;
+	}
+
+	public void setTipoAtendimento(short tipoAtendimento) {
+		this.tipoAtendimento = tipoAtendimento;
+	}
+
+	public Receita getReceita() {
+		return receita;
+	}
+
+	public void setReceita(Receita receita) {
+		this.receita = receita;
+	}
+
+	public Medicamento getMedicamento() {
+		return medicamento;
+	}
+
+	public void setMedicamento(Medicamento medicamento) {
+		this.medicamento = medicamento;
+	}
 	 
 }
  

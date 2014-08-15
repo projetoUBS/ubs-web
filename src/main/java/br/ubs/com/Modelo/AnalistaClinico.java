@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -16,6 +16,26 @@ public class AnalistaClinico extends Funcionario {
 
 	@OneToMany (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY, mappedBy = "AnalistaClinico")
 	private List <Resultado> resultado;
+
+	
+	//Getters e Setters
+	
+	public int getCrf() {
+		return crf;
+	}
+
+	public void setCrf(int crf) {
+		this.crf = crf;
+	}
+
+	public List<Resultado> getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(List<Resultado> resultado) {
+		this.resultado = resultado;
+	}
 	 
+	
 }
  

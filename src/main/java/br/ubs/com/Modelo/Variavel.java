@@ -1,4 +1,4 @@
-package br.ubs.com.Modelo;
+package br.ubs.com.modelo;
 
 import java.util.List;
 
@@ -21,6 +21,33 @@ public class Variavel {
 	 
 	@OneToMany(mappedBy = "Variavel")
 	private List <Resultado> resultado;
-	 
+
+	
+	//Getters e Setters
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public List<Resultado> getResultado() {
+		return resultado;
+	}
+
+	public void setResultado(List<Resultado> resultado) {
+		this.resultado = resultado;
+	}
+	
 }
  
