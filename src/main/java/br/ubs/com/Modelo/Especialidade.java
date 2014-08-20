@@ -8,8 +8,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 @Entity
+@NamedQueries({
+	@NamedQuery(name = "UBS.findByName", query = "SELECT u FROM UBS u WHERE u.nome = :nome ORDER BY u.nome")})
 public class Especialidade {
  
 	@Id

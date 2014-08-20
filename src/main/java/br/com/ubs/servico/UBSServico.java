@@ -22,5 +22,25 @@ public class UBSServico {
     public void cadastrarUBS (UBS ubs) throws Exception {
           controller.create(ubs);
     }
+   
+    public void editarUBS (UBS ubs) throws Exception {
+    	controller.edit(ubs);
+    }	
 
+    public void excluirUBS (UBS ubs) throws Exception {
+    	controller.destroy(ubs);
+    }	
+     
+    public void findUBSByLocalidade(String localidade) throws Exception {
+    	controller.findByLocalidade(localidade);
+    }	
+    /*
+     * Quais parâmetros colocar nos controller.*?
+    public void findUBSById (UBS ubs) throws Exception {
+    	controller.recuperarPeloID(***);
+    }
+    
+    public void listarAllUBS (List <UBS> ubs) throws Exception {
+    	controller.list(***);
+    }*/
 }

@@ -11,7 +11,7 @@ import br.ubs.com.modelo.Agenda;
 import br.ubs.com.modelo.Medico;
 
 
-public class AgendaService extends GenericoDAOJPA<Agenda> implements Serializable {
+public class AgendaControle extends GenericoDAOJPA<Agenda> implements Serializable {
 	                
 	                public List<Agenda> listaUnidadeMedicoData(Medico m, Date data) {
 	                               Query query = em.createNamedQuery("Agenda.listaMedicoData");
