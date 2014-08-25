@@ -5,9 +5,34 @@
 	
 	<persistence-unit name="UBS_PU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>br.com.ubs.Modelo.Pessoa</class>
-		<class>br.com.ubs.Modelo.Funcionario</class>
-		<class>br.com.ubs.Modelo.Enfermeiro</class> 
+		<class>br.ubs.com.modelo.Pessoa</class>
+		<class>br.ubs.com.modelo.Funcionario</class>
+		<class>br.ubs.com.modelo.Atendente</class>
+		<class>br.ubs.com.modelo.Agenda</class>
+		<class>br.ubs.com.modelo.Receita</class>
+		<class>br.ubs.com.modelo.Resultado</class>
+		<class>br.ubs.com.modelo.Descricao</class>
+		<class>br.ubs.com.modelo.ProdutoPedido</class>
+		<class>br.ubs.com.modelo.Farmaceutico</class>
+		<class>br.ubs.com.modelo.MedicamentoReceita</class>
+		<class>br.ubs.com.modelo.Medico</class>
+		<class>br.ubs.com.modelo.Exame</class>
+		<class>br.ubs.com.modelo.Procedimento</class>
+		<class>br.ubs.com.modelo.Vacinacao</class>
+		<class>br.ubs.com.modelo.Paciente</class>
+		<class>br.ubs.com.modelo.Variavel</class>
+		<class>br.ubs.com.modelo.AnalistaClinico</class>
+		<class>br.ubs.com.modelo.Medicamento</class>
+		<class>br.ubs.com.modelo.Pedido</class>
+		<class>br.ubs.com.modelo.Especialidade</class>
+		<class>br.ubs.com.modelo.Prontuario</class>
+		<class>br.ubs.com.modelo.Grupo</class>
+		<class>br.ubs.com.modelo.Vacina</class>
+		<class>br.ubs.com.modelo.Enfermeiro</class>
+		<class>br.ubs.com.modelo.Estoquista</class>
+		<class>br.ubs.com.modelo.UBS</class>
+		<class>br.ubs.com.modelo.Estoque</class>
+		<class>br.ubs.com.modelo.Produto</class> 
 				
 			<properties>
 			<!-- Não mostra o SQL na console do java -->
@@ -20,7 +45,7 @@
 			<property name="javax.persistence.jdbc.user" value="root"/>
 			<property name="javax.persistence.jdbc.password" value="root"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="eclipselink.ddl-generation" value="create-tables"/>
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
 		
 		</properties>
 	</persistence-unit>

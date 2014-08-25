@@ -226,6 +226,7 @@
 			</h:panelGrid>
 			<br />
 			<br />
+<<<<<<< HEAD
 			<center>
 				<p:commandButton value="Gravar Dados" icon="ui-icon-disk" />
 			</center>
@@ -257,4 +258,183 @@
 
 	<ui:include src="/WEB-INF/rodape.xhtml" />
 </h:body>
+=======
+	    	<h:outputLabel for="nome" value="Nome: " />
+	    	<p:inputText maxlenght="50" size="50" id="nome" 
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"	    		
+	    		/>
+	    	<p:spacer height="25" />
+	    	
+	    	
+	    	<!--  Campo CPF  -->
+	    	
+	    	
+	    	<br />
+	    	<h:outputLabel for="cpf" value="CPF: " />
+	    	<p:inputMask id="cpf" size="20" maxlenght="11" mask="999.999.999-99"
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		/>
+	    	
+	    		
+	    	<!--  Campo RG  -->
+	    		
+	    		
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="rg" value="RG: " />
+	    	<p:inputText id="rg" size="20"
+	    		/>
+	    		
+	    		
+	    	<!--  Campo Data de Nascimento  -->	
+	    		
+	    		
+	    	<p:spacer width="25" />	
+	    	<h:outputLabel for="dataNascimento" value="Data de Nascimento: " />
+	    	<p:inputMask id="dataNascimento" size="14" maxlenght="8" mask="99-99-9999"
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		/>
+	    	<p:spacer height="25" />
+	    		
+	    		
+	    	<!--  Campo Logradouro  -->
+	    	
+	    	
+	    	<br />
+	    	<h:outputLabel for="logradouro" value="Logradouro: " />
+	    	<p:inputText maxlenght="80" size="80" id="logradouro"	    		
+	    		/>
+	    	<p:spacer height="25" />
+	    		
+	    		
+	    	<!--  Campo UF  -->
+	    	
+	    	
+	    	<br />
+	    	<h:outputLabel for="uf" value="UF: " />
+	    	<p:inputText maxlenght="2" size="2" id="uf"	    
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"		
+	    		/>
+	    		
+	    			    		
+	    	<!--  Campo Cidade  -->
+	    	
+	    	
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="cidade" value="Cidade:  " />
+	    	<p:inputText maxlenght="40" size="40" id="cidade"	 
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"   		
+	    		/>
+	    		
+	    		
+	    	<!--  Campo Bairro  -->
+	    	
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="bairro" value="Bairro:  " />
+	    	<p:inputText maxlenght="40" size="40" id="bairro"
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		/>
+	    		
+	    		
+	    	<!--  Campo CEP  -->
+	    	
+	    	
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="cep" value="CEP:  " />
+	    	<p:inputMask maxlenght="8" size="12" mask="99.999-999" id="cep"	    		
+	    		/>
+	    	<p:spacer height="25" />
+	    	
+	    	
+	    	<!--  Campo Telefone Residencial  -->
+	    	
+	    	<br />
+	    	<h:outputLabel for="foneResidencial" value="Telefone Residencial:  " />
+	    	<p:inputMask maxlenght="10" size="16" mask="(99) 9999-9999" id="foneResidencial"	    		
+	    		/>
+	    	
+	    	
+	    	<!--  Campo Telefone Celular  -->
+	    	
+	    	
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="foneCelular" value="Telefone Celular:  " />
+	    	<p:inputMask maxlenght="11" size="18" mask="(99) 99999-9999" id="foneCelular"	    		
+	    		/>
+	    	<p:spacer height="25" />
+	    	
+	    	
+	    	<!--  Campo Usuário do Sistema  -->
+	    	
+	    	<br />
+	    	<h:outputLabel for="usuario" value="Usuário:  " />
+	    	<p:inputText id="usuario"
+	    		required="TRUE" requiredMessage="Campo obrigatório não preenchido"	    		
+	    		/>
+	    	
+	    	
+	    	<!--  Campo Senha do Usuário  -->
+	    	
+	    	
+	    	<p:spacer width="25" />
+	    	<h:outputLabel for="senha" value="Senha:  " />
+	    	<p:password id="senha"
+				required="TRUE" requiredMessage="Campo obrigatório não preenchido"
+	    		/>
+	    	<p:spacer height="25" />
+	    	
+	    	
+	    	<!--  Seleção de Tipo de Usuário -->
+	    	
+	    	<br /><br />
+	    	<h:panelGrid>
+	    		<p:outputLabel for="tipoUsuario" style="font-weight:bold" value="Tipo de Usuário:" />
+	    		<p:selectManyCheckbox id="tipoUsuario">
+	    			<f:selectItem itemLabel="Paciente" itemValue="paciente" />
+	    			<f:selectItem itemLabel="Funcionário" itemValue="funcionario" />
+	    		</p:selectManyCheckbox>
+	    	</h:panelGrid>
+	    	
+	    	
+	    	<!--  Botão de Salvar  -->
+	    	
+	    	<br/>
+	    	<p:button
+	    		value="Gravar Dados" icon="ui-icon-disk">
+	    	</p:button>
+	    	
+	    	
+	    	<!--  Botão Dados do Paciente --> 
+	    	
+
+	    	<p:button
+	    		disabled="#{PessoaBean.existePaciente(TRUE)}" value= "Dados de Paciente" >
+	    	</p:button>
+	    	
+	    	
+	    	<!--  Botão Dados do Funcionário -->
+	    	
+	    	<p:button 
+	    		disabled="#{PessoaBean.existePaciente(TRUE)}"
+	    		value="Dados de Paciente">
+	    	</p:button>
+	    	
+	    	
+	    	<!--  Botão Incluir Pessoa -->
+	    	
+	    	<p:button
+	    		value="Incluir Pessoa">
+	    	</p:button>
+	    	
+	    	
+	    	<!--  Botão Excluir Pessoa -->
+	    	
+	    	<p:button 
+	    		value="Excluir Pessoa">
+	    	</p:button>
+	    	
+	    	
+	    </h:form>	    
+		<ui:include src="/WEB-INF/rodape.xhtml" />
+	</h:body>
+>>>>>>> 0f2d83a869d1ee93459acbeb618143e2511a81b9
 </html>
