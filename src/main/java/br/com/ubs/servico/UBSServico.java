@@ -34,13 +34,12 @@ public class UBSServico {
     public void findUBSByLocalidade(String localidade) throws Exception {
     	controller.findByLocalidade(localidade);
     }	
-    /*
-     * Quais parâmetros colocar nos controller.*?
-    public void findUBSById (UBS ubs) throws Exception {
-    	controller.recuperarPeloID(***);
+    
+    public void findUBSById (Integer id) throws Exception {
+    	controller.recuperarPeloID(UBS.class,id);
     }
     
-    public void listarAllUBS (List <UBS> ubs) throws Exception {
-    	controller.list(***);
-    }*/
+    public void listarAllUBS () throws Exception {
+    	controller.list(UBS.class);
+    }
 }

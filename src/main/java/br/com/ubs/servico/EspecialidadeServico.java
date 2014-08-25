@@ -35,14 +35,13 @@ public class EspecialidadeServico {
     public void findEspecialidadeByName(String nome) throws Exception {
     	controller.findByNome(nome);
     }	
-    /*
-     * Quais parâmetros colocar nos controller.*?
-    public void findUBSById (***) throws Exception {
-    	controller.recuperarPeloID(***);
+    
+    public void findUBSById(Integer id) throws Exception {
+    	controller.recuperarPeloID(Especialidade.class,id);
     }
     
-    public void listarAllUBS (***) throws Exception {
-    	controller.list(***);
-    }*/
+    public void listarAllUBS () throws Exception {
+    	controller.list(Especialidade.class);
+    }
 }
 

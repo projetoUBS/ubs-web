@@ -8,9 +8,11 @@ import javax.persistence.Query;
 import br.com.ubs.dao.GenericoDAOJPA;
 import br.ubs.com.modelo.Especialidade;
 
+@SuppressWarnings("serial")
 public class EspecialidadeControle extends GenericoDAOJPA<Especialidade> implements Serializable {
 
-		 public List<Especialidade> findByNome(String nome) {
+		@SuppressWarnings("unchecked")
+		public List<Especialidade> findByNome(String nome) {
 
 	         Query query = em.createNamedQuery("Especialidade.findByName");
 

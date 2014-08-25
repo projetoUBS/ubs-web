@@ -55,6 +55,7 @@ public class GenericoDAOJPA<E> implements GenericoDAO<E> {
 	}
 
 	//@Override
+	@SuppressWarnings("unchecked")
 	public List<E> list(Class<E> persistentClass) {
 		return em.createQuery("SELECT e FROM" + persistentClass.getName() + "e").getResultList();
 	}
